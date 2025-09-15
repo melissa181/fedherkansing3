@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Racer Worldwide Homepage  
-  <img src="homepage.png" width="375px" alt="Racer Worldwide Homepage">
+ <img src="readme-images/homepage.png" width="375px" alt="Racer Worldwide Homepage">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Washed Flag Hoodie
-  <img src="productpage.png" width="375px" alt="Washed Flag Hoodie">
+  <img src="readme-images/productpage.png" width="375px" alt="Washed Flag Hoodie">
  
 </details>
 
