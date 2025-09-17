@@ -55,20 +55,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  <img src="/readme-images/t1.png" width="375x" alt= "wacg test">
-  <img src="/readme-images/t2.png" width="375x" alt= "wacg test">
-  <img src="/readme-images/t3.png" width="375x" alt= "wacg test">
-  <img src="/readme-images/t4.png" width="375x" alt= "wacg test">
-  <img src="/readme-images/t5.png" width="375x" alt= "wacg test">
+  <img src="/readme-images/IMG_4256.png" width="375x" alt= "wacg test">
+  <img src="/readme-images/IMG_4257.png" width="375x" alt= "wacg test">
+  <img src="/readme-images/IMG_4258.png" width="375x" alt= "wacg test">
+  <img src="/readme-images/IMG_4259.png" width="375x" alt= "wacg test">
+  <img src="/readme-images/IMG_4260.png" width="375x" alt= "wacg test">
 
   Lijst met je bevindingen die in de test naar voren kwamen:
-  - geen duidelijke pagina titels (h1,h2, titels)
+  - geen duidelijke pagina titels (h1,h2, titels), dit maakt het onduidelijk voor mensen met screenreaders
   - niet semantisch HTML op de homepage
   - geen list items gebruikt waar het moet
-  - geen alt text bij images
+  - geen alt text bij image, onduidelijk waar je bent als screenreader gebruiker
   - geen captions of transcripts bij video
-  - video is autoplay en kan niet gepauzeerd worden
-  - geen dark mode
+  - video is autoplay en kan niet gepauzeerd worden, is niet toegankelijk voor mensen met epilepsie bijvoorbeeld
+  - geen dark mode beschikbaar
   
 
 
@@ -108,12 +108,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Melissa                   | Noa                  | Joost                | student 4          |
-  | ---                       | ---                  | ---                  | ---                |
-  | Checken of mijn HTML      |                      |                      |                    |
-  | juist is en wat.          |                      |                      |                    |
-  | ik kan verbeteren. als er |                      |                      |                    |
-  | tijd is, kijkje naar CSS  |                      |                      |                    |
+  | Melissa                   | Noa                  | Joost                                            | Julia         
+  | ---                       | ---                  | ---                                              | -tekst naar rechts en 
+  | Checken of mijn HTML      |-youtube filmpje.                                                        |links schuiven responsive
+                              | moet mijn hele footer|   - kijken naar de                               |- html even goed zien of
+                                                     |vormgeving van mijn                               |het klopt 
+  | juist is en wat.          |     uitgewerkt       |header en footer                                  
+- een responsive carousel maken                      |  - een gradient                                  |
+  | ik kan verbeteren. als er |                      |  toevoegen op mijn                               |                    
+  | tijd is, kijkje naar CSS                        |   images waardoor de tekst beter te lezen is.                 
 
 
   ### Verslag van meeting
