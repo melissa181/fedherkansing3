@@ -114,7 +114,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
                               | moet mijn hele footer|   - kijken naar de                               |- html even goed zien of
                                                      |vormgeving van mijn                               |het klopt 
   | juist is en wat.          |     uitgewerkt       |header en footer                                  
-- een responsive carousel maken                      |  - een gradient                                  |
+een responsive carousel maken                      |  - een gradient                                  |
   | ik kan verbeteren. als er |                      |  toevoegen op mijn                               |                    
   | tijd is, kijkje naar CSS                        |   images waardoor de tekst beter te lezen is.                 
 
@@ -122,10 +122,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - a linkjes binnen li zetten en niet eromheen
+  - vragen of ik binnen hamburger menu ook moet uitklappen
+  - eerste 2 linkjes geen h2 maar gewoon een a linkje
+  - geen h1,h2,h3 etc nodig in linkje
+  - video in website is geen img maar <video>, downloaden van website en erin zetten
+  - pijltje bij email input als svg in button zetten in de section
 
 </details>
 
@@ -151,6 +153,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+1.Mijn youtube filmpje werkt nog niet. Mmag mijn span?
+2.hoe maak ik mijn 3e sectie scrollende text
+hoe doe ik de img animatie 1e sectie
+3.- achtergrond video toegankelijk
+- vraag over de header
+- text aanpassen met css
+4.-hoe maak ik carousel met 3 plaatjes in een grid layout -hoe doe ik aan en uit button op een filmpje - hoe maak ik header transparent - hoe doe ik advertentie in header maar uit de flex layout
+ 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

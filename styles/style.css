@@ -1,13 +1,26 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
+/* fonts */
+@font-face {
+	font-family: "WebFont";
+	src: url("../fonts/roboto_n4.2019d890f07b1852f56ce63ba45b2db45d852cba.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
 
-
-
+@font-face {
+	font-family: "WebFont";
+	src: url("../fonts/roboto_n7.f38007a10afbbde8976c4056bfe890710d51dec2.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
 
 
 /*********************/
@@ -15,11 +28,16 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-text2: #eee;
+	--color-border: #aaaaaa;
 }
 
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 
 
@@ -28,4 +46,313 @@
 /****************/
 
 /* jouw code */
+
+section:first-of-type p {
+	background-color: var(--color-text);
+	color: var(--color-text2);
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0.5em 0;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: var(--color-text2);
+	z-index: 1000;
+}
+
+header h1 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+header nav:first-of-type ul {
+	display: flex;
+	gap: 1em;
+	list-style: none;
+	padding: .5em;
+}
+
+header nav:first-of-type ul li {
+	width: 1.5em;
+}
+
+header>img {
+	width: 6.5em;
+}
+
+header>ul {
+	display: flex;
+	gap: 1em;
+	padding: .5em;
+	list-style: none;
+	align-items: center;
+}
+
+header>ul button {
+	width: 1.5em;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+header>ul a img {
+	width: 1.5em;
+}
+
+header nav:last-of-type button {
+	width: 1.5em;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+header nav:last-of-type {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	inset: 0;
+	transform: translateX(100%);
+	transition: transform 0.3s;
+	background-color: var(--color-text2);
+	z-index: 9999;
+
+}
+
+header nav li {
+	list-style: none;
+}
+
+header nav:last-of-type.is-open {
+	transform: translateX(0%);
+}
+
+main section:nth-of-type(1) {
+	position: relative;
+}
+
+main section:nth-of-type(1) img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 0;
+}
+
+main section:nth-of-type(1) ul {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	gap: 1em;
+	list-style: none;
+	text-align: center;
+	z-index: 1;
+}
+
+main section:nth-of-type(1)>ul li {
+	backdrop-filter: blur(.2em);
+	padding: .8em 1em .8em 1em;
+	border: 0.01em solid var(--color-border);
+	border-radius: .5em;
+}
+
+main section:nth-of-type(1)>ul li a {
+	color: var(--color-text2);
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: .8em;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+}
+
+main section:nth-of-type(2) {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main section:nth-of-type(2) {
+	display: block;
+	padding: 1em;
+}
+
+main section:nth-of-type(2)>h2,
+main section:nth-of-type(2)>a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+main section:nth-of-type(2)>a {
+	float: right;
+	white-space: nowrap;
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: .9em;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	color: var(--color-text);
+}
+
+
+
+main section:nth-of-type(2) h2 {
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+	gap: 1em;
+	list-style: none;
+	padding: 1em 1em 1em 0;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li a {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	color: var(--color-text);
+
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li a h3 {
+	order: 2;
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: .7em;
+	text-transform: uppercase;
+	padding: .2em;
+	padding-top: .5em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li a img {
+	order: 1;
+	width: 100%;
+	display: block;
+
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) li a p {
+	order: 3;
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: .6em;
+	text-transform: uppercase;
+	padding: .2em;
+}
+
+main section:nth-of-type(2) ul:nth-of-type(1) {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(10em, 1fr));
+	gap: 1em;
+	list-style: none;
+	padding: 1em 1em 1em 0;
+}
+
+main section:nth-of-type(3) {
+	position: relative;
+}
+
+main section:nth-of-type(3) video {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 0;
+}
+
+main section:nth-of-type(3) ul {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	gap: 1em;
+	list-style: none;
+	text-align: center;
+	z-index: 1;
+}
+
+main section:nth-of-type(3) ul li {
+	padding: .5em;
+	list-style: none;
+}
+
+main section:nth-of-type(3)>ul li h2 {
+	color: var(--color-text2);
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: .8em;
+
+}
+
+main section:nth-of-type(3)>ul li a {
+	color: var(--color-text2);
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: .8em;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	backdrop-filter: blur(.2em);
+	padding: .8em 1em .8em 1em;
+	border: 0.01em solid var(--color-border);
+	border-radius: .5em;
+}
+
+footer section:first-of-type ul{
+	display: flex;
+	flex-direction: column;
+}
+
+footer section:first-of-type ul li{
+	padding-top: 1em;
+	padding-left: .8em;
+}
+
+footer section:first-of-type ul li h2{
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+footer section:first-of-type ul li h3{
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: .8em;
+}
+
+footer section:first-of-type input{
+}
 
