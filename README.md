@@ -165,9 +165,9 @@ hoe doe ik de img animatie 1e sectie
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - intersection observer
+  - header wordt div
+  - video autoplay
 - ...
 
 </details>
@@ -208,6 +208,13 @@ hoe doe ik de img animatie 1e sectie
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+1. carousel? button states. video vergroten op mobile first, hero image vergroten op mobile first. toevoegen aan cart image veranderen.
+2.plaatje in mn footer naast de tekst
+lettertype in mn select aanpassen
+3.Is m'n html goed ingesprongen & of ik een hero sectie op de goede manier heb gemaakt
+4.
+5.
+6.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
