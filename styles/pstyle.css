@@ -1,0 +1,20 @@
+body{
+	overflow-x: hidden;
+}
+
+header{
+    backdrop-filter: blur(4em);
+}
+
+section:first-of-type p {
+	background-color: var(--color-text);
+	color: var(--color-text2);
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0.5em 0;
+	width: 100%;
+}
+
