@@ -27,20 +27,30 @@
 }
 
 :root {
-	--color-svg: #eee;
-	--color-text: #111;
-	--color-text2: #eee;
-	--color-border: #828282;
-	--color-background: #ffffff;
-	--color-hamborder: #ececec;
+  --color-svg: #eee;
+  --color-text: #111;
+  --color-text2: #eee;
+  --color-border: #828282;
+  --color-background: #ffffff;
+  --color-hamborder: #ececec;
+  --color-sizeborder: #ddd;
+  --color-hover: #f5f5f5;
 }
 
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-svg: #0e0e0e;
+    --color-text: #eee;
+    --color-text2: #111;
+    --color-border: #444;
+    --color-background: #000000;
+    --color-hamborder: #333;
+    --color-sizeborder: #555;
+    --color-hover: #1a1a1a;
+  }
+}
 
-/* light dark mode */
-/* @media (prefers-color-scheme:dark){
-	.zwart-wit-icon{}
-
-} */
 
 * {
 	margin: 0;
@@ -51,13 +61,15 @@
 /* MIJN STYLING */
 /****************/
 
+body{
+	background-color: var(--color-background);
+}
+
+@media (max-width: 749px){
 
 header {
 	position: sticky;
 	top: -1.6em;
-	/* width: 100%; */
-	/* background-color: var(--color-text2); */
-	/* backdrop-filter: blur(.2em); */
 	z-index: 1000;
 	    display: flex;
     flex-direction: column-reverse;
@@ -67,14 +79,12 @@ div {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* backdrop-filter: blur(.2em); */
 	background-color: none;
 	transition: background-color 0.4s ease-out;
 }
 
 .transparent {
 	backdrop-filter: blur(4em);
-	/* background-color: red; */
 	transition: background-color 0.2s ease-out;
 }
 
@@ -173,12 +183,11 @@ header div nav:last-of-type {
 	display: flex;
 	flex-direction: column;
 	inset: 0;
-	transform: translateX(120%);
+	transform: translateX(100%);
 	transition: transform 0.3s;
 	background-color: var(--color-background);
 	z-index: 9999;
 	height: 100vh;
-	width: 20em;
 	padding: 1em;
 }
 
@@ -187,7 +196,7 @@ header div nav li {
 }
 
 header div nav:last-of-type.is-open {
-	transform: translateX(16%);
+	transform: translateX(0);
 }
 
 /* footer */
@@ -325,24 +334,131 @@ footer section:last-of-type ul:last-of-type li:nth-of-type(3) a {
 	text-decoration: none;
 }
 
-/* footer section:last-of-type ul:last-of-type{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr;
 }
 
-footer section:last-of-type ul:last-of-type li:nth-of-type(1){
-	grid-column: 1;
-	grid-row: 1;
+@media (min-width: 750px){
+
+	header {
+	position: sticky;
+	top: -1.6em;
+	z-index: 1000;
+	    display: flex;
+    flex-direction: column-reverse;
 }
 
-footer section:last-of-type ul:last-of-type li:nth-of-type(2){
-	grid-column: 2;
-	grid-row: 1;
+div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: none;
+	transition: background-color 0.4s ease-out;
 }
 
-footer section:last-of-type ul:last-of-type li img{
-	width: 7em;
+.transparent {
+	backdrop-filter: blur(4em);
+	transition: background-color 0.2s ease-out;
+}
+
+header h1 {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
 
 
-} */
+
+div svg {
+	fill: var(--color-text2);
+	transition: fill 0.4s;
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+
+}
+
+div.transparent>nav svg,
+div.transparent>ul:first-of-type svg {
+	fill: var(--color-text);
+}
+
+div.transparent>img {
+	filter: invert(0);
+}
+
+
+header div nav:first-of-type ul li {
+	width: 1.5em;
+}
+
+header div>img {
+	width: 6.5em;
+	transition: 0.6s;
+}
+
+header div>ul {
+	display: flex;
+	gap: 1em;
+	padding: .5em;
+	list-style: none;
+	align-items: center;
+}
+
+header div>ul button {
+display: none;
+}
+
+header div>ul a img {
+	width: 1.5em;
+}
+
+header div nav:first-of-type{
+	display: flex;
+	order: 3;
+}
+
+header div nav:first-of-type ul {
+	display: flex;
+	gap: 1em;
+	list-style: none;
+	padding: .5em;
+}
+
+header div nav:last-of-type button {
+display: none;
+}
+
+
+header div nav:last-of-type ul li {
+	padding: 1.5em 1.5em 1.5em 0;
+	font-family: "WebFont", sans-serif;
+	font-weight: 400;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+header div nav:last-of-type ul li a {
+	text-decoration: none;
+	color: var(--color-text2);
+}
+
+header div nav:last-of-type {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	inset: 0;
+	padding: 1em;
+	width: 100%;
+}
+
+header div nav li {
+	list-style: none;
+}
+
+
+
+}
+

@@ -182,7 +182,7 @@ hoe doe ik de img animatie 1e sectie
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+work in progress
 
 </details>
 
@@ -212,17 +212,12 @@ hoe doe ik de img animatie 1e sectie
 2.plaatje in mn footer naast de tekst
 lettertype in mn select aanpassen
 3.Is m'n html goed ingesprongen & of ik een hero sectie op de goede manier heb gemaakt
-4.
-5.
-6.
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - pagina 2 html beginnen
+  - grid van hero section
 
 </details>
 
@@ -264,8 +259,17 @@ lettertype in mn select aanpassen
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://developer.mozilla.org/en-US/docs/Web/CSS
+  2. https://chatgpt.com/ verschillende prompts voor het verbeteren van code 
+  3. https://uxwing.com/x-social-media-black-icon/
+  4. https://uxwing.com/black-instagram-icon/
+  5. https://www.racerworldwide.net/?srsltid=AfmBOoqxoiV-sHi5mpR3417ypcRSzhkR2m4ptz1qmCSKuOipmHaIYTKg
+  6. https://www.svgrepo.com/svg/333265/play-pause?edit=true
+  7. https://www.svgrepo.com/svg/522226/play
+  8. https://cssgrid-generator.netlify.app/
+  9. https://codepen.io/Tom-Dyer/pen/QwjPQGm
+  10. https://www.w3schools.com/tags/ref_pxtoemconversion.asp
+  11. https://codepen.io/shooft/pen/MYKjaXd
+  12. https://codepen.io/vrsh/pen/myVWJJL?editors=0010
 
 </details>
